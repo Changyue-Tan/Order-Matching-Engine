@@ -1,0 +1,36 @@
+
+Initial Bids:
+  ex1 -> price: 0.95000000, fee: 0.00024000, volume: 10
+  ex2 -> price: 0.98000000, fee: 0.00050000, volume: 10
+  ex3 -> price: 1.00000000, fee: 0.00020000, volume: 5
+  ex4 -> price: 1.02000000, fee: 0.00025000, volume: 4
+  ex5 -> price: 0.94000000, fee: 0.00000000, volume: 11
+
+Initial Asks:
+  ex1 -> price: 0.96000000, fee: 0.00024000, volume: 50
+  ex2 -> price: 1.03000000, fee: 0.00050000, volume: 8
+  ex3 -> price: 1.01000000, fee: 0.00020000, volume: 2
+  ex4 -> price: 1.04000000, fee: 0.00025000, volume: 5
+  ex5 -> price: 0.96000000, fee: 0.00000000, volume: 3
+
+Executed Arbitrage Trades:
+ Buy from ex5 @ 0.96 (fee=0), sell to ex4 @ 1.02 (fee=0.00025), vol=3, ppu=0.059745, net=0.179235
+ Buy from ex1 @ 0.96 (fee=0.00024), sell to ex4 @ 1.02 (fee=0.00025), vol=1, ppu=0.0595146, net=0.0595146
+ Buy from ex1 @ 0.96 (fee=0.00024), sell to ex3 @ 1 (fee=0.0002), vol=5, ppu=0.0395696, net=0.197848
+ Buy from ex1 @ 0.96 (fee=0.00024), sell to ex2 @ 0.98 (fee=0.0005), vol=10, ppu=0.0192796, net=0.192796
+
+Total Net Profit: 0.62939360
+
+Remaining Bids:
+  ex1 -> price: 0.95000000, fee: 0.00024000, volume: 10
+  ex2 -> price: 0.98000000, fee: 0.00050000, volume: 0
+  ex3 -> price: 1.00000000, fee: 0.00020000, volume: 0
+  ex4 -> price: 1.02000000, fee: 0.00025000, volume: 0
+  ex5 -> price: 0.94000000, fee: 0.00000000, volume: 11
+
+Remaining Asks:
+  ex1 -> price: 0.96000000, fee: 0.00024000, volume: 34
+  ex2 -> price: 1.03000000, fee: 0.00050000, volume: 8
+  ex3 -> price: 1.01000000, fee: 0.00020000, volume: 2
+  ex4 -> price: 1.04000000, fee: 0.00025000, volume: 5
+  ex5 -> price: 0.96000000, fee: 0.00000000, volume: 0
